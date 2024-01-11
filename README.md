@@ -75,4 +75,58 @@ To successfully complete the project, we need to perform following tasks:
 <br />
 <br />
 
-4.	Buy a Domain Name (Very Cheap) for IP Address EC2 Instance: 
+4.	Buy a Domain Name (Very Cheap) for IP Address EC2 Instance: Passbolt is successfully installed. Now it is the time for configuration. When I clicked on "Get Started", I could see that SSL is not configured. I must configure SSL otherwise password will be sent in clear text. To configur SSL, I need a Domain Name to associate it with IP address. I bought the Domain Name "passbolt.click" from NameCheap.
+
+
+<p align="center">
+<img src="https://i.ibb.co/CtN9Q0N/10.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+<p align="center">
+<img src="https://i.ibb.co/SJZWhTh/11.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+<p align="center">
+<img src="https://i.ibb.co/NYsvBsp/14.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+5.	Configuration of nginx Server on Ubuntu for SSL Connection: To do so, I must connect to our ec2 instance from our ubuntu via SSH. I took the IP address (54.252.193.206) from EC2 instance and typed command “ssh admin@54.252.193.206”. I was then connected to Passbolt via SSH. To open the configuration file of nginx, I typed “sudo nano /etc/nginx/sites-enabled/nginx-passbolt.conf”  and put server name : “passbolt.click” . Then I saved the configuration file and started proceeding with nginx server configuration. Once configured, the https version of the domain (https://passbolt.click) was available. Then I completed the remaining configuration from the website.
+
+<p align="center">
+<img src="https://i.ibb.co/zm1bXHd/18.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+6.	Download Passbolt Extension in the Web Browser (Chrome/Firefox):
+
+<p align="center">
+<img src="https://i.ibb.co/VQmY9nd/19.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+<p align="center">
+<img src="https://i.ibb.co/s943DGY/20.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+<p align="center">
+<img src="https://i.ibb.co/sJBRjbJ/21.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+7.	Testing of Newly Created Password Manager
+
+<p align="center">
+<img src="https://i.ibb.co/TwM2dgm/22.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
+
+8.	Deletion of EC2 Instance in AWS to Avoid Further Cost
+
+<p align="center">
+<img src="https://i.ibb.co/FWVxVCG/23.jpg" height="80%" width="80%" alt="Hosting of Password Management System in AWS"/>
+<br />
+<br />
